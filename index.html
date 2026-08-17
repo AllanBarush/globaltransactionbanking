@@ -1,65 +1,127 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Transaction Banking | RiskMathics</title>
-<meta name="description" content="Global Transaction Banking. Curso, 7.2 sesiones, inicia 1 Sep 2026. Virtual Live. RiskMathics Financial Institute.">
+<meta name="description" content="Global Transaction Banking. Banca Transaccional: cash management, pagos, trade finance, supply chain finance y FX como motor de ingresos recurrentes. 6 sesiones, inicia 21 Sep 2026. Virtual / Live. MXN $35,000 + TAX. RiskMathics Financial Institute.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0A2136;--bg2:#061523;--ink:#D7E2E0;--soft:#8FA5A9;--acc:#3BBFB8;--accB:#63D2CB;--deep:#0D8A8A;--title:#F2F6F5;--card:#0F2A40;--rule:rgba(59,191,184,.15)}
+:root{--bg:#101820;--bg2:#000000;--ink:#EAE4DA;--soft:#A79E8F;--acc:#C9A96A;--deep:#7A5C2E;--title:#F8F4EC;--card:#1e262e;--rule:rgba(201,169,106,0.16);--glow:rgba(122,92,46,0.33)}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{background:var(--bg2);color:var(--ink);font-family:'Lora',Georgia,serif;font-size:17px;line-height:1.75}
 h1,h2,h3{font-family:'Poppins',Arial,sans-serif}
 .wrap{max-width:960px;margin:0 auto;padding:0 24px}
 .kicker{font-family:'Poppins',Arial,sans-serif;font-size:11px;letter-spacing:3.2px;text-transform:uppercase;color:var(--acc);font-weight:600}
-.hero{min-height:70vh;display:flex;flex-direction:column;justify-content:center;padding:90px 24px 70px;text-align:center;background:radial-gradient(1000px 540px at 50% 30%,rgba(13,138,138,.22),transparent),linear-gradient(165deg,var(--bg),var(--bg2))}
+.hero{min-height:72vh;display:flex;flex-direction:column;justify-content:center;padding:96px 24px 72px;text-align:center;background:radial-gradient(1000px 560px at 50% 28%,rgba(122,92,46,0.33),transparent),linear-gradient(165deg,#101820,#000000)}
 .hero .serie{font-family:'Poppins',Arial,sans-serif;font-size:11.5px;letter-spacing:4.5px;text-transform:uppercase;color:var(--acc);font-weight:600}
-.hero h1{font-size:clamp(29px,5.4vw,56px);font-weight:800;color:var(--title);line-height:1.07;letter-spacing:-.5px;margin:20px auto 0;max-width:21ch}
-.hero .subt{font-family:'Poppins',Arial,sans-serif;font-size:clamp(14px,1.9vw,18px);color:var(--acc);margin-top:12px;font-weight:500}
-.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:30px auto 0}
+.hero h1{font-size:clamp(30px,5.6vw,58px);font-weight:800;color:var(--title);line-height:1.06;letter-spacing:-.5px;margin:20px auto 0;max-width:20ch}
+.hero .subt{font-family:'Poppins',Arial,sans-serif;font-size:clamp(14px,2vw,19px);color:var(--acc);margin-top:13px;font-weight:500}
+.hero .aud{font-style:italic;color:var(--soft);font-size:14.5px;margin-top:10px}
+.hero .rule{width:64px;height:2px;background:var(--acc);margin:24px auto 0}
+.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:28px auto 0}
 .chip{font-family:'Poppins',Arial,sans-serif;font-size:11.5px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--rule);background:rgba(255,255,255,.04);color:var(--ink);padding:8px 15px;border-radius:30px;font-weight:600}
 .hero-ctas{display:flex;gap:13px;justify-content:center;margin-top:30px;flex-wrap:wrap}
 .btn{font-family:'Poppins',Arial,sans-serif;font-size:12.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:15px 32px;border-radius:4px;display:inline-block}
-.btn-primary{background:var(--deep);color:#FFFFFF}.btn-primary:hover{background:var(--accB);color:var(--bg2)}
+.btn-primary{background:var(--deep);color:#FFFFFF}.btn-primary:hover{background:var(--acc);color:#140306}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.3);color:var(--ink)}.btn-ghost:hover{background:rgba(255,255,255,.06)}
-.sec{padding:64px 0;border-top:1px solid var(--rule)}
+.sec{padding:66px 0;border-top:1px solid var(--rule)}
 .sec-title{font-size:clamp(24px,3.2vw,34px);font-weight:800;color:var(--title);line-height:1.15;margin:12px 0 8px}
-.sec-sub{font-style:italic;color:var(--soft);font-size:17px;max-width:720px}
-ul.temas{list-style:none;margin-top:26px}
-ul.temas li{padding:15px 0 15px 34px;position:relative;border-bottom:1px solid var(--rule);font-size:16px}
-ul.temas li::before{content:"";position:absolute;left:0;top:24px;width:9px;height:9px;background:var(--acc);border-radius:50%}
+.sec-sub{font-style:italic;color:var(--soft);font-size:17px;max-width:740px}
+ol.temas{list-style:none;margin-top:28px;counter-reset:tema}
+ol.temas>li{padding:17px 0 17px 52px;position:relative;border-bottom:1px solid var(--rule);font-size:16px;counter-increment:tema}
+ol.temas>li::before{content:counter(tema,decimal-leading-zero);position:absolute;left:0;top:19px;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:15px;color:var(--acc)}
+ol.temas b{color:var(--title);font-family:'Poppins',Arial,sans-serif;font-weight:600;font-size:15.5px}
+ul.sub{list-style:none;margin-top:10px}
+ul.sub li{padding:6px 0 6px 22px;position:relative;font-size:15px;color:var(--ink)}
+ul.sub li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;background:var(--acc);border-radius:50%}
+.parte{margin-top:34px;border:1px solid var(--rule);background:var(--card);padding:30px 32px}
+.parte .pt{font-family:'Poppins',Arial,sans-serif;font-weight:700;color:var(--title);font-size:18px}
+.parte .pm{font-family:'Poppins',Arial,sans-serif;font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--acc);margin-top:6px;font-weight:600}
+.quote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:clamp(20px,3vw,28px);color:var(--title);text-align:center;max-width:620px;margin:0 auto;line-height:1.4}
+.quote small{display:block;font-style:normal;font-family:'Poppins',Arial,sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--acc);margin-top:16px}
+.fac{display:grid;grid-template-columns:1fr;gap:22px;margin-top:30px}
+.fc{border:1px solid var(--rule);background:var(--card);padding:28px 30px}
+.fc .fn{font-family:'Poppins',Arial,sans-serif;font-weight:700;color:var(--title);font-size:18px}
+.fc .fr{font-family:'Poppins',Arial,sans-serif;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--acc);margin:6px 0 12px;font-weight:600}
+.fc p{font-size:15px;color:var(--ink)}
+.fechas{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fd{font-family:'Poppins',Arial,sans-serif;border:1px solid var(--rule);background:var(--card);padding:14px 20px;text-align:center;min-width:96px}
+.fd .d{font-size:20px;font-weight:800;color:var(--acc)}
+.fd .m{font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--soft);margin-top:4px}
 .ficha{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:30px}
 .f{background:var(--card);padding:22px 14px;text-align:center}
-.f .n{font-family:'Poppins',Arial,sans-serif;font-size:20px;font-weight:800;color:var(--acc)}
+.f .n{font-family:'Poppins',Arial,sans-serif;font-size:19px;font-weight:800;color:var(--acc)}
 .f .l{font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--soft);margin-top:7px}
 @media(max-width:700px){.ficha{grid-template-columns:repeat(2,1fr)}}
-.cross{margin-top:34px;border:1px solid var(--rule);background:var(--card);padding:26px 28px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
-.cross .t{font-family:'Poppins',Arial,sans-serif;font-weight:700;color:var(--title);font-size:16px}
-.cross .s{font-style:italic;color:var(--soft);font-size:14px;margin-top:4px}
 footer{background:var(--bg2);color:var(--soft);padding:36px 24px;text-align:center;font-family:'Poppins',Arial,sans-serif;font-size:12px;line-height:2;border-top:1px solid var(--rule)}
 footer a{color:var(--acc);text-decoration:none}
+.tgl{font-family:'Lora',Georgia,serif;font-style:italic;color:var(--acc);font-size:15.5px;margin-top:12px}
+ol.temas .tg{display:block;font-family:'Lora',Georgia,serif;font-style:italic;color:var(--acc);font-size:14px;margin-top:9px}
+.abs p{font-size:16.5px;margin-top:18px;color:var(--ink)}.abs p b{color:var(--title)}
+.hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}.hl .h{border:1px solid var(--rule);background:var(--card);padding:18px 20px}.hl .h b{font-family:'Poppins',Arial,sans-serif;color:var(--acc);font-weight:700;font-size:13px;display:block;margin-bottom:6px}.hl .h span{font-size:14.5px;color:var(--ink)}@media(max-width:700px){.hl{grid-template-columns:1fr}}
+ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px solid var(--rule)}ul.dir li::before{content:"";position:absolute;left:2px;top:19px;width:8px;height:8px;background:var(--acc);border-radius:50%}
 </style></head><body>
-
 <header class="hero">
- <div class="serie">RiskMathics · Curso · RiskMathics Financial Institute</div>
+ <div class="serie">Programa ejecutivo en vivo</div>
  <h1>Global Transaction Banking</h1>
- 
+ <div class="subt">Banca Transaccional: cash management, pagos, trade finance, supply chain finance y FX como motor de ingresos recurrentes</div>
+ <div class="aud">Banqueros corporativos, relationship managers, especialistas de producto de banca transaccional, tesoreros y directores de finanzas corporativas</div>
+ <div class="rule"></div>
  <div class="chips">
-  <span class="chip">7.2 sesiones</span>
-  <span class="chip">Inicia 1 Sep 2026</span>
-  <span class="chip">Virtual Live</span>
+  <span class="chip">6 sesiones · 12 horas</span>
+  <span class="chip">Inicia 21 Sep 2026</span>
+  <span class="chip">Virtual / Live</span>
   <span class="chip">MXN $35,000 + TAX</span>
  </div>
- <div class="hero-ctas"><a class="btn btn-primary" href="#rm-enroll">Inscríbete</a><a class="btn btn-ghost" href="#programa">Ver detalles</a></div>
+ <div class="hero-ctas"><a class="btn btn-primary" href="#rm-enroll">Inscr&iacute;bete</a><a class="btn btn-ghost" href="#temario">Ver temario</a></div>
 </header>
 
-<section class="sec" id="programa"><div class="wrap">
- <div class="kicker">El programa</div><h2 class="sec-title">Ficha del programa.</h2><p class="sec-sub">Curso de RiskMathics Financial Institute en formato Virtual Live. Regístrate y recibe el temario completo por correo; un asesor te contacta el mismo día.</p>
+<section class="sec"><div class="wrap">
+ <p class="quote">&ldquo;Learn. Apply. Profit.&rdquo;<small>RiskMathics Financial Institute</small></p>
+</div></section>
+<section class="sec"><div class="wrap abs">
+ <div class="kicker">El programa</div><h2 class="sec-title">De qu&eacute; va.</h2>
+<p>La banca transaccional es la columna vertebral del banco moderno: administra la liquidez, los pagos y el comercio internacional que mantienen operando a las empresas, y a cambio genera ingresos recurrentes estables para la institucion. Este programa revela como los servicios de Global Transaction Banking (cash management, pagos, trade finance, supply chain finance y FX) se convierten en un motor de rentabilidad estable y de bajo riesgo, al mismo tiempo que consolidan la lealtad de los clientes corporativos. Los participantes aprenderan a transformar estas capacidades en vinculos estrategicos de largo plazo, integrandolas con soluciones de credito e investment banking para ofrecer una cobertura financiera 360 grados.</p><p>El programa tambien prepara al banquero para el futuro del negocio: digitalizacion, APIs, Banking-as-a-Service, embedded finance y la irrupcion de fintechs que estan redefiniendo la propuesta de valor. Ademas, incluye un bloque estrategico sobre como preparar y ganar licitaciones (RFPs), convirtiendo la relacion transaccional en ventaja competitiva.</p><p>En conjunto, el participante sale equipado para reposicionar la banca transaccional, tradicionalmente vista como operativa, como la gran fuente de diferenciacion, ingresos estables y liderazgo en clientes corporativos globales.</p><p><b>Objetivo:</b> Que el participante domine integralmente la arquitectura de la Banca Transaccional Global, entendiendo tanto su rol estrategico como su ejecucion operativa, y sea capaz de disenar soluciones, defender mandatos en procesos de RFP y convertir la cuenta transaccional en la puerta de entrada a mas negocios con el cliente corporativo.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+ <div class="kicker">Highlights</div><h2 class="sec-title">7 razones para tomarlo.</h2>
+ <div class="hl"><div class="h"><b>01</b><span>Disenar y estructurar soluciones de cash management, pagos, trade finance, supply chain finance y FX que respalden la liquidez, la eficiencia y la competitividad de empresas locales y multinacionales.</span></div><div class="h"><b>02</b><span>Transformar la banca transaccional de servicio operativo a motor de ingresos recurrentes, maximizando la fidelizacion del cliente y la rentabilidad del banco.</span></div><div class="h"><b>03</b><span>Integrar la banca transaccional con credito corporativo e investment banking para ofrecer una cobertura 360 grados al cliente.</span></div><div class="h"><b>04</b><span>Aplicar innovaciones digitales (APIs, BaaS, embedded finance, open banking, blockchain, CBDCs) para anticipar y liderar la evolucion del mercado transaccional.</span></div><div class="h"><b>05</b><span>Competir y ganar mandatos estrategicos (RFPs) con propuestas de valor solidas, diferenciadas y sustentadas en tecnologia, cobertura y servicio.</span></div><div class="h"><b>06</b><span>Gestionar relaciones de largo plazo que abran cross-selling hacia derivados, capital markets y soluciones de banca de inversion.</span></div><div class="h"><b>07</b><span>Simulacion practica: los participantes trabajan sobre un RFP real simplificado y elaboran por equipos el resumen ejecutivo de oferta de valor y un pitch oral con retroalimentacion.</span></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+ <div class="kicker">Dirigido a</div><h2 class="sec-title">Para qui&eacute;n es.</h2>
+ <ul class="dir"><li>Banqueros corporativos y relationship managers de banca de empresas.</li><li>Especialistas y product managers de cash management, trade finance y pagos.</li><li>Tesoreros corporativos, directores de finanzas y responsables de riesgo cambiario.</li><li>Equipos de tecnologia y transformacion digital en instituciones financieras.</li><li>Profesionales de fintech que compiten o se asocian con bancos en servicios transaccionales.</li><li>Requisitos: formacion economico-administrativa y/o financiera, bases solidas de matematicas financieras y, de preferencia, experiencia en instituciones del medio financiero.</li></ul>
+</div></section>
+
+<section class="sec" id="temario"><div class="wrap">
+ <div class="kicker">Temario</div><h2 class="sec-title">Qu&eacute; vas a dominar.</h2>
+ <p class="sec-sub">Bloque 1: Soluciones de Banca Transaccional Global. Bloque 2: Estrategia y competencia, RFPs y soluciones a la medida.</p>
+ <ol class="temas">
+  <li><b>Panorama estrategico de la Banca Transaccional</b> Evolucion y rol actual de la banca transaccional en bancos corporativos. Como paso de ser un servicio auxiliar a considerarse el workhorse generador de ingresos estables y de bajo riesgo. Componentes principales (pagos, cuentas, comercio) y su integracion con la banca de inversion para ofrecer un servicio completo al cliente. Metricas de su importancia actual: ingresos por comisiones, saldos de depositos como fondeo estable y rentabilidad elevada frente al consumo de capital.</li>
+  <li><b>Cash Management y administracion de liquidez</b> Gestion de cajas y tesoreria corporativa. Productos de pago y cobranza: transferencias nacionales e internacionales, pagos masivos de nomina, domiciliaciones y depositos referenciados. Soluciones de concentracion de saldos (cash pooling fisico y notional), barridos automaticos entre cuentas y estructuras de cuentas espejo para centralizar liquidez. Plataformas de banca electronica corporativa (host-to-host, portales web) y necesidades de seguridad y eficiencia en la operacion diaria de tesoreria.</li>
+  <li><b>Pagos corporativos y tendencias en cobros</b> Modernizacion de los sistemas de pago corporativo. Pagos inmediatos 24/7, estandares ISO 20022 en mensajeria financiera y novedades en SWIFT gpi para rastreo de pagos internacionales. Pagos moviles y wallets corporativas. Herramientas para optimizar cuentas por cobrar: automatizacion de conciliacion, e-invoicing y portales de pago para clientes finales. Como compiten los bancos ofreciendo integracion con el ERP del cliente y APIs para iniciar pagos desde sistemas corporativos.</li>
+  <li><b>Financiamiento del comercio internacional (Trade Finance)</b> Soluciones para facilitar importaciones y exportaciones. Cartas de credito de exportacion e importacion: estructura, riesgos que cubren y rol del banco confirmador. Cobranzas documentarias frente a cartas de credito: usos y diferencias. Garantias internacionales (standby L/C, fianzas) para contratos en el extranjero. Credito al comercio: prefinanciacion de exportaciones y financiamiento al importador (usance LCs, pagares). Riesgo pais y agencias de credito a la exportacion (ECA). Tendencias: digitalizacion de documentos (Electronic Bills of Lading) y trade basado en blockchain.</li>
+  <li><b>Supply Chain Finance y factoring</b> Herramientas para financiar cadenas de suministro. Confirming o pago a proveedores (reverse factoring): el banco anticipa pagos a proveedores de una empresa compradora grande y mejora la liquidez de la cadena. Factoring internacional y domestico: descuento de facturas por cobrar con y sin recurso. Programas de inventario en garantia y prestamos sobre activos circulantes. Beneficios duales para proveedor, comprador y banco. Consideraciones para implementar SCF con exito: volumen de proveedores, plataforma tecnologica y analisis de riesgo.</li>
+  <li><b>Mercado de divisas (FX) y soluciones de comercio exterior</b> Servicios de tipo de cambio para empresas que operan multicurrency. Coberturas FX: forwards, swaps de divisas y opciones para cubrir exposicion en importaciones, exportaciones o deudas en moneda extranjera. Estrategias de gestion de riesgo cambiario corporativo, politicas de cobertura y contabilidad de coberturas. Pagos cross-border masivos en moneda local. Rol de los bancos como facilitadores de comercio exterior: cuentas en el extranjero, banca corresponsal, manejo de regulaciones cambiarias y flujos internacionales eficientes.</li>
+  <li><b>Centralizacion de tesoreria y soluciones multi-pais</b> Diseno de centros de tesoreria regionales (Regional Treasury Centers) y ventajas de centralizar la gestion financiera de un corporativo global: ahorro de costo, control de riesgos y mejor negociacion bancaria. Herramientas ofrecidas: cuentas virtuales para trazar operaciones de subsidiarias sin abrir cientos de cuentas fisicas, notional pooling multi-divisa y sistemas de netting para pagos intra-grupo. Casos de corporativos que crearon un In-House Bank interno apoyados por su banco principal.</li>
+  <li><b>Banca digital, APIs y Embedded Finance</b> Nuevas propuestas digitales en banca transaccional. API Banking para conectar servicios bancarios directamente con los sistemas del cliente, con iniciacion de pagos y consulta de saldos en tiempo real desde el ERP corporativo. Modelos de Banking-as-a-Service donde el banco embebe sus productos en plataformas de terceros. Casos de finanzas integradas exitosos. Retos: ciberseguridad, gestion de la marca blanca y acuerdos de nivel de servicio. Oportunidades: llegar a nuevos segmentos y geografias apalancando la base de usuarios de aliados no bancarios.</li>
+  <li><b>Tendencias globales y disrupcion en Transaction Banking</b> Fuerzas que estan moldeando el futuro de la banca transaccional. Open Banking y normas PSD2 que obligan a compartir datos con terceros, y su impacto en servicios de cuenta y pagos. Surgimiento de fintechs especializadas en nichos: pagos internacionales mas baratos y plataformas de trade finance P2P. Inteligencia artificial en cash management para prediccion de flujos y deteccion de fraude en pagos. Monedas digitales de banco central (CBDCs) y su posible rol en pagos corporativos. Casos de bancos globales que transformaron su negocio transaccional invirtiendo en tecnologia.</li>
+  <li><b>Preparacion de propuestas ganadoras (RFPs)</b> Como enfrentar un Request for Proposal emitido por un gran corporativo o por gobierno en busca de servicios bancarios. Pasos del proceso comercial: comprension profunda de las necesidades del cliente mediante reuniones pre-RFP y armado de un equipo multidisciplinario de productos, tecnologia, operaciones y cumplimiento para responder.</li>
+  <li><b>Elementos clave de una propuesta exitosa y simulacion</b> Demostracion de capacidades tecnologicas (plataformas robustas, integraciones API), cobertura geografica, precios competitivos y estructura de comisiones clara, casos de exito similares y componente consultivo. Estrategias para diferenciarse de otros bancos finalistas apoyandose en fortalezas propias como excelencia en servicio respaldada con SLA y soluciones innovadoras. Simulacion: los participantes revisan un RFP real simplificado y elaboran por equipos el resumen ejecutivo de oferta de valor y un pitch oral, con retroalimentacion.</li>
+  <li><b>Gestion de la relacion y retencion post-RFP</b> Por que las empresas emiten RFPs: servicio deficiente, necesidades de credito no atendidas o expansion a nuevas regiones. Mejores practicas para relationship managers una vez ganado el mandato: onboarding efectivo que minimiza la friccion en la migracion de servicios, seguimiento proactivo de niveles de servicio e innovacion continua. Como prepararse para revalidar el negocio en el siguiente ciclo de RFP, dado que la mayoria de los corporativos reconsidera a sus bancos cada 4 a 5 anos. Indicadores de exito y cross-selling hacia productos de inversion y mercados.</li>
+ </ol>
+</div></section>
+<section class="sec"><div class="wrap">
+ <div class="kicker">Faculty</div><h2 class="sec-title">Qui&eacute;nes lo imparten.</h2>
+ <div class="fac"><div class="fc"><div class="fn">Gregorio Merino</div><div class="fr">Co-Founder de Flipping Mad | Independent Financial Consultant | Ex Managing Director de Global Transaction Banking en BBVA Mexico</div><p>Senior Banker con mas de 30 anos de trayectoria en banca corporativa y transaccional, Gregorio Merino Rendon ha ocupado posiciones de liderazgo en instituciones globales y nacionales, consolidandose como una de las voces con mayor experiencia en el ecosistema bancario mexicano e internacional. Inicio su carrera en Citibank Mexico, donde ascendio en el area de Banca Corporativa hasta desempenar la Subdireccion. Posteriormente lidero desde Nueva York la apertura y operacion internacional de Probursa International, marcando un hito en la internacionalizacion de la banca mexicana. De regreso en Mexico se integro a BBVA, donde durante mas de dos decadas desempeno posiciones estrategicas: Director de Comercio Exterior y Corresponsalia, Director de Unidad de Banca Corporativa, Senior Banker y, finalmente, Managing Director de Global Transaction Banking, rol en el que fue responsable de atender a mas de 250 grupos corporativos con soluciones integrales en banca transaccional, comercio exterior y financiamiento estructurado. Actualmente es Co-Founder de Flipping Mad, firma con base en Madrid dedicada a transformar viviendas antiguas en inmuebles de alto valor, ademas de fungir como Independent Financial Consultant para empresas y patrimonios privados. Economista formado en el Instituto Tecnologico Autonomo de Mexico (ITAM), combina vision estrategica, profundo conocimiento de los mercados financieros y experiencia operativa en banca internacional. Areas de especializacion: banca transaccional y corporativa internacional, comercio exterior y financiamiento estructurado, consultoria financiera independiente para corporativos y HNWIs, y estrategias de inversion inmobiliaria en mercados globales.</p></div></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+ <div class="kicker">El programa</div><h2 class="sec-title">Ficha del programa.</h2>
+ <p class="sec-sub">Regístrate y recibe el temario completo por correo; un asesor te contacta el mismo día.</p>
  <div class="ficha">
-  <div class="f"><div class="n">7.2</div><div class="l">Sesiones en vivo</div></div>
-  <div class="f"><div class="n">18</div><div class="l">Horas totales</div></div>
-  <div class="f"><div class="n">1 Sep</div><div class="l">Inicio · 2026</div></div>
-  <div class="f"><div class="n">MXN $35,000 + TAX</div><div class="l">Inversión</div></div>
+  <div class="f"><div class="n">6</div><div class="l">Sesiones</div></div>
+  <div class="f"><div class="n">12</div><div class="l">Horas totales</div></div>
+  <div class="f"><div class="n">21 Sep</div><div class="l">Inicio</div></div>
+  <div class="f"><div class="n">MXN $35,000 + TAX</div><div class="l">Inversi&oacute;n</div></div>
  </div>
- 
 </div></section>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
@@ -74,13 +136,13 @@ footer a{color:var(--acc);text-decoration:none}
  #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
  @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
 </style>
-<section id="rm-enroll" style="background:linear-gradient(150deg,#0A2136,#061523);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(150deg,#101820,#000000);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
  <div style="max-width:600px;margin:0 auto;">
  <div style="text-align:center;margin-bottom:38px;">
- <div style="color:#0D8A8A;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
+ <div style="color:#C9A96A;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
  <h2 style="font-size:26px;margin:16px 0 0;font-weight:600;line-height:1.25;letter-spacing:.3px;">Asegura tu lugar</h2>
- <div style="width:50px;height:2px;background:#0D8A8A;margin:18px auto;"></div>
- <p style="color:#c2cee0;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos y verifica tu correo,<br>y recibe el temario completo. Sin compromiso.</p>
+ <div style="width:50px;height:2px;background:#C9A96A;margin:18px auto;"></div>
+ <p style="color:#c2cee0;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos, verifica tu correo y tu WhatsApp,<br>y recibe el temario completo. Sin compromiso.</p>
  </div>
  <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
  <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
@@ -154,18 +216,18 @@ footer a{color:var(--acc);text-decoration:none}
  <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#1b2430;">
  <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#1b2430;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
  </label>
- <button type="submit" style="background:#0D8A8A;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
- <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Te enviamos un código a tu correo · Datos protegidos</p>
+ <button type="submit" style="background:#7A5C2E;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
+ <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Verificamos tu correo y tu teléfono con un código · Datos protegidos</p>
  </form>
  <div id="rm-verify" style="display:none;"></div>
  <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tu correo. Te enviamos el temario a tu correo y un asesor te contactará.</div>
  <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
  <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
- <div style="font-size:30px;font-weight:300;color:#0A2136;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">MXN $35,000 <span style="font-size:15px;font-weight:400;color:#9aa4b4;letter-spacing:.5px;">+ TAX</span></div>
- <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">MXN $35,000 · 7.2 sesiones · 18 horas</div>
+ <div style="font-size:30px;font-weight:300;color:#7A5C2E;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">MXN $35,000 <span style="font-size:15px;font-weight:400;color:#9aa4b4;letter-spacing:.5px;">+ TAX</span></div>
+ <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">MXN $35,000 · 6 sesiones · 12 horas</div>
  <div style="display:grid;gap:10px;">
- <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globaltransactionbanking" target="_blank" rel="noopener" style="background:#0D8A8A;color:#ffffff;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
- <a id="rm-stripe" href="https://buy.stripe.com/28EeV51Z5dXadYZ5QZ2Rz3o" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0A2136;color:#0A2136;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
+ <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globaltransactionbanking" target="_blank" rel="noopener" style="background:#7A5C2E;color:#ffffff;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
+ <a id="rm-stripe" href="https://buy.stripe.com/28EeV51Z5dXadYZ5QZ2Rz3o" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #7A5C2E;color:#7A5C2E;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
  </div>
  <p style="font-size:11px;color:#8fa2b8;margin-top:14px;font-family:'Lora',Georgia,serif;font-style:italic;">M&aacute;s de 100,000 profesionales formados en 25 a&ntilde;os &middot; BANXICO, CNBV, AFOREs y la banca de LATAM</p>
 <p style="font-size:10.5px;color:#9aa4b4;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
@@ -220,18 +282,17 @@ c.style.display="block";var i=document.getElementById('rm-otp-email');if(i)i.foc
 async function rmVerify(){var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');
 if(ecode.length<4){m.textContent="Escribe el codigo que te enviamos por correo.";return;}
 m.textContent="Verificando...";var res;
-try{res=await rmPost(Object.assign({action:"check",email_code:ecode},RM_LEAD,{action:"check",email_code:ecode}));}catch(_){res={};}
+try{res=await rmPost(Object.assign({},RM_LEAD,{action:"check",email_code:ecode}));}catch(_){res={};}
 if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}
 else{m.textContent=(res&&res.error)||"Codigo incorrecto o vencido. Intenta de nuevo.";}}
 </script>
 <!-- ===== /SALES MACHINE v3.2 ===== -->
-
-
-<footer>RISKMATHICS FINANCIAL INSTITUTE<br>
-Informes: <a href="mailto:growth@riskmathics.com">growth@riskmathics.com</a> · <a href="https://wa.me/525579894034" target="_blank" rel="noopener">WhatsApp +52 55 7989 4034</a><br>
-&copy; 2026 RiskMathics Financial Institute · Learn. Apply. Profit.<span id="rm-social" style="display:inline-flex;gap:16px;align-items:center;justify-content:center;margin-top:12px"><a href="https://www.linkedin.com/in/riskmathicsfi/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://x.com/RiskMathicsFI" target="_blank" rel="noopener" aria-label="X" title="X" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a><a href="https://www.youtube.com/@RiskMathicsFI" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://www.instagram.com/riskmathics_financial/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a><a href="https://www.facebook.com/riskmathicsfi/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.strava.com/clubs/955042" target="_blank" rel="noopener" aria-label="Strava" title="Strava" style="color:inherit;display:inline-flex;opacity:.75"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg></a></span>
-</footer>
-<!--RM-CORNER-LOGO--><style>#rmcl{position:fixed;top:10px;left:14px;z-index:99998;line-height:0}#rmcl img{height:30px;width:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}@media(max-width:900px){#rmcl{display:none}}</style><a id="rmcl" href="https://riskmathics.com" target="_blank" rel="noopener" aria-label="RiskMathics"><img src="rm-logo.png" alt="RiskMathics"></a>
 <script>(function(){var U="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-hit";function h(e){var d=JSON.stringify({slug:"globaltransactionbanking",ev:e});try{navigator.sendBeacon(U,d)}catch(_){try{fetch(U,{method:"POST",body:d,keepalive:true})}catch(__){}}}h("view");document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var href=a.href||"";if(href.indexOf("buy.stripe.com")>=0)h("stripe");else if(href.indexOf("paypal-pay")>=0)h("paypal");},true);})();</script>
 <script async src="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-pixel"></script>
+
+<footer>RISKMATHICS FINANCIAL INSTITUTE<br>
+Informes: <a href="mailto:growth@riskmathics.com">growth@riskmathics.com</a> &middot; <a href="https://wa.me/525579894034" target="_blank" rel="noopener">WhatsApp +52 55 7989 4034</a><br>
+&copy; 2026 RiskMathics Financial Institute &middot; Learn. Apply. Profit.<span id="rm-social" style="display:block;margin-top:6px"><a href="https://www.linkedin.com/in/riskmathicsfi/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://x.com/RiskMathicsFI" target="_blank" rel="noopener">X</a> &middot; <a href="https://www.youtube.com/@RiskMathicsFI" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.instagram.com/riskmathics_financial/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/riskmathicsfi/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.strava.com/clubs/955042" target="_blank" rel="noopener">Strava</a></span>
+</footer>
+<!--RM-CORNER-LOGO--><style>#rmcl{position:fixed;top:10px;left:14px;z-index:99998;line-height:0}#rmcl img{height:30px;width:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}@media(max-width:900px){#rmcl{display:none}}</style><a id="rmcl" href="https://riskmathics.com" target="_blank" rel="noopener" aria-label="RiskMathics"><img src="rm-logo.png" alt="RiskMathics"></a>
 </body></html>
